@@ -8,6 +8,8 @@
 
 3) Остальные файлы это кастомные шаблоны с примерами форм.
 
+
+
 Полное описание работы в цикле статей:
 
 Часть 1: <a href="http://dontforget.pro/wordpress/avtorizatsiya-v-frontende-wordpress/" target="_blank">Front-end авторизация и логаут в WordPress</a>
