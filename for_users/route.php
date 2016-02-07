@@ -4,7 +4,8 @@ add_action('wp_print_scripts','include_scripts'); // повесим функци
 function include_scripts(){
 	wp_enqueue_script('jquery'); // добавим в скрипты jQuery
 	wp_enqueue_script('jquery-form'); // добавим в скрипты плагин jQuery forms
-    wp_localize_script( 'jquery', 'ajax_var', // добавим объект с глобальными JS переменными
+	wp_enqueue_script('for_users', get_template_directory_uri() . '/js/for_users.js', array('jquery-form'));
+    wp_localize_script('jquery', 'ajax_var', // добавим объект с глобальными JS переменными
 		array( 
 			'url' => admin_url('admin-ajax.php'), // и сунем в него путь до AJAX обработчика
 		)
